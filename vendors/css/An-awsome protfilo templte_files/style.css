@@ -1,0 +1,497 @@
+/*============ */
+/* Basic Setup */
+/*============ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     /*==সব কিছু ভিতর থাকবে,কোন এরিয়া বাহিরে যাবে না ==*/
+    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+line-height: 1.3;
+    font-size: 1.6 rem;
+}
+u1 li{
+    list-style-type: none;
+}
+/*==HEADING==*/
+h1{
+    font-size: 4.2rem;
+    color: #fff;
+    
+}
+.clearfix:after{
+    content:* *;
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+        
+}
+/*============ */
+/* Reusable Component */
+/*============ */
+.row{
+    max-width: 114rem;
+    margin:0 auto;
+}
+section{
+    padding: 8rem 0;
+    overflow: hidden;
+    
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color:#fff;  
+    text-align: center;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    background: #fff;
+    width: 8.5rem; 
+    margin: auto;
+    margin-top: 2rem;
+    
+}
+h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+}
+h4{
+    
+     font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  margin-top: 2.5 rem;
+    
+}
+.box p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: #fff;
+}
+/* Button */
+.btn:link,
+.btn:visited,
+.btn{
+    background: #333;
+    border-bottom: .3rem solid #000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem;6.0rem;
+    border-radius: .3rem;
+    display: inline-block;
+    margin-top: 4.5rem;
+    font-size: 1.6rem;
+        
+    
+}
+/*paragraph*/
+.little-description{
+ font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 3rem;
+        
+    
+    
+    
+}
+
+
+
+
+/*============ */
+/* Header Section */
+/*============ */
+header{
+    background:linear-gradient(rgba(135, 80, 156, 0.90),rgba(135, 80, 156, 0.90)), url(img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 85vh;
+    position: relative;
+}
+.logo{ 
+    height: 3.5rem;
+    width: auto;
+    margin-top: 3.5rem;
+    float:left;
+}
+/*Main Navigation*/
+.main-nav{ 
+    float:right;
+    margin-top: 4.0rem;
+
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 10px
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(100, 58, 121, );
+    padding: .4rem 1.6rem;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: .3s;
+        
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+     background: rgba(100, 58, 121,1 );
+}
+.active{
+     background: rgba(100, 58, 121,1 );
+    border-radius: .3rem;
+}
+    
+.hero-text-box{
+    position: absolute;
+    top :50%;
+    left :50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.btn-hero:link,
+.btn-hero:visited{
+    background: #eb7d4b;
+    border-color: #c86a40;
+}
+/*============ */
+/* Services Section */
+/*============ */
+
+    
+.services-section{
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(rgba(23, 194, 164, 0.9),rgba(23, 194, 164, 0.9)), url(img/services-bg.jpg);
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    
+}
+.services-section h2:after {
+    background:#14a58c;
+}
+services-icon{
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;   
+}
+
+
+
+
+/*============ */
+/* Team Section */
+/*============ */
+.team-section{
+    background:linear-gradient(rgba(231, 241, 248, 0.90),rgba(231, 241, 248, 0.9)), url(img/team-bg.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    background-attachment: fixed;
+    
+    
+}
+.team-section h2{
+    color: #3c4761;
+}
+.team-section h2::after{
+    background: #c8d9e5;
+}
+.team-member{
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    height: 20rem;
+    border-radius: 50%;
+    
+    
+}
+.team-section h3{
+    color: #3c4761;
+}
+.role{
+    color:#30bae7;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-top:.5rem;
+    display: inline-block;
+}
+.team-section .box p{
+    color: #3c4761;
+}
+.social-link{
+    margin-top: 4.5rem;
+}
+.social-link ul li{
+    display: inline-block;
+    margin: .5rem;
+}
+.social-link ul li a:link {
+    color:#fff;
+}
+.social-link ul li a:link i::before{
+    background:#bdd1df; 
+        width: 2rem;
+    height:  2rem;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 2rem;
+    padding:  1rem;
+   transition: .5s; 
+    
+}
+.social-link ul li a:hover i::before{
+    background:#393939;
+    transform: rotate(360deg);
+}
+/*============ */
+/* Skill Section */
+/*============ */
+.skill-section{
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(img/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.skill-section h2,
+.skill-section h3
+{
+    color:#3c4761 ; 
+}
+.skill-section h2::after{
+    background: #dfe8ed;
+}
+.skill-section .box {
+    margin-top: 4.5rem;
+}
+svg.radial-progress circle{
+    stroke-width: 5;
+}
+svg.radial-progress text{
+    
+    font-size: 1.5rem;
+    fill: #3c4761;
+  
+}
+svg.web-design circle{
+    stroke: #30bae7;
+}
+svg.graphic-design circle{
+    stroke: #d74680;
+}
+svg.html-css circle{
+    stroke: #15c7a8;
+}
+svg.ui-ux circle{
+    stroke: #eb7d4b;
+}
+/*============ */
+/* portfolio section */
+/*============ */
+.portfolio-section{
+background: linear-gradient(rgb(255, 221, 90),rgba(255, 221, 153, 0.90)),url(img/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+text-align: center;
+}
+.portfolio-section h2{
+    color: #393939;
+}
+.portfolio-section h2::after{
+    background: #e5c37f;
+}
+.portfolio-filter{
+    margin:4.5rem 0;
+}
+.portfolio-filter button{
+  background: #ebc985;
+      font-size:1.8rem;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    color: #393939;
+    margin:0b.5rem;
+    transition: 0.5s;  
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow:  inset 0 .3rem  .5rem rgba(60,71,97,0.5);
+}
+portfolio-image{
+    width:100%;
+    height: 30rem;
+}
+.portfolio-section .btn-load-more{
+    background:#17c2a4;
+        border-color:#14a58c;
+}
+.portfolio-section .mixitup-control-active{
+    background: #fff;
+}
+/*============ */
+/* Testimonial section */
+/*============ */
+.testimonial{
+    background: linear-gradient(rgba(215, 70, 128, 0.90), rgba(215, 70, 128, 0.9)), url(img/testimonial-bg.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+text-align: center;
+    
+    }
+.testimonial .little-description{
+    text-align: center;
+    color:#ffffff;
+}
+.testimonial .col:nth-child(3){
+    margin-left: 0;
+}
+/*============ */
+/*পিকচারগুলো ওভারলেপ করে*/
+/*============ */
+.testimonial .col:nth-child(1),
+.testimonial .col:nth-child(2){
+    margin-top: 4rem;
+}
+.testimonial .col:nth-child(3),
+.testimonial .col:nth-child(4){
+    margin-top: 8rem;
+}
+
+/*============ */
+/*কলাম গুলোর গ্যাপ এর জন্য*/
+/*============ */
+.client-photo{
+    width: 18rem;
+    float: left;
+}
+/*============ */
+/*ছবিটা ছোট + বামে সরানোর জন্য*/
+/*============ */
+.client-photo img{
+height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    
+}
+
+/*============ */
+/*পিকগুলো রেডিয়াস করার জন্য*/
+/*============ */
+.client-review{
+    width: 35rem;
+    float:left;
+}
+
+/*============ */
+/*কমেন্ট ছোট + ছবি বামে*/
+/*============ */
+.client-review p{
+  font-size: 2.1rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    
+}
+.client-review .role{
+    color: #ffdd99;
+}
+/*============ */
+/* END portfolio section */
+/*============ */
+
+
+/*============ */
+/* START  CONTACT section */
+/*============ */
+.contact-section{
+    text-align: center;
+    background:linear-gradient(rgba(60, 84, 153, 0.90),rgba(60, 84, 153, 0.90)), url(img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+}
+
+.contact-section h2::after{
+    background: #273a71;
+    /*== straight line==*/
+}
+.contact-section .little-description{
+    color: #fff;
+}
+.contact-section form{
+    margin-top: 5rem;
+     /*==creating upper gap from form==*/
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+    background: #273a71;
+    border: .1rem solid #273a71;
+    width:100%;
+    padding: 1.5rem;
+     /*==সব কিছু প্রসারিত করার জন্য প্যাডিং ইউজ করা হয়==*/
+    border-radius: 0.5rem;
+     /*==ফরম বাকানোর জন্য ==*/
+    font-size: 1.8rem;
+     /*== ফন্টের সাইজ বাড়ানোর জন্য==*/
+    color: #ffffff;
+    margin: .5rem 0;
+    /*==ফ্মের ভিতর মাঝখানে গ্যাপ পাওয়ার জন্য==*/
+       
+}
+.contact-section form::placeholder{
+    color: #ffffff;
+    opacity: 1;
+     /*==ফ্মের ভিতর ইনপুট পরিপুরনতা পাওয়ার জন্য==*/
+}
+.btn-submit {
+    border: 0;
+    border-bottom: .3rem solid #299ec5;
+    background: #30bae7;
+}
+.btn-submit:hover{
+    cursor: pointer;
+}
+
+
+/*============ */
+/* END CONTACT section */
+/*============ */
